@@ -5,7 +5,7 @@ import { tailwind, getColor } from '../tailwind';
 
 export default function Content({children}) {
   return (
-    <View style={tailwind('flex-1 bg-white rounded-tl-large')}>
+    <View style={tailwind('flex-1 bg-white overflow-hidden rounded-tl-large')}>
       {children}
     </View>
   )

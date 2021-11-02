@@ -1,0 +1,11 @@
+{
+  "name": "shonacss",
+  "version": "1.0.0",
+  "description": "Use Shona CSS in React Native projects.",
+  "main": "index.js",
+  "author": {
+		"name": "African Nerds",
+		"email": "hello@africannerds.com",
+		"url": "https:africannerds.com"
+	}
+}

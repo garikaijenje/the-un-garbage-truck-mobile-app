@@ -16,49 +16,9 @@ import Footer from '../components/Footer';
 import Container from '../components/Container';
 import Content from '../components/Content';
 
-const ScanContainer = styled.View`
 
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: tomato;
 
-    &:before {
-      content:'';
-      position:absolute;
-      top:-10px; 
-      left:-10px;
-      border:1px solid #fff;
-      height:100%;
-      width:100%;
-      border-radius: 10%;
-    }
-`;
-
-const StyledDiv = styled.View({
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: 300,
-  width: 300,
-  overflow: 'hidden',
-  borderRadius: 30,
-  backgroundColor: 'tomato',
-  '::before': {
-    content: '',
-    position: 'absolute',
-    top: -10,
-    left: -10,
-    border: '1px solid #fff',
-    height: '100%',
-    width:' 100%',
-    borderRadius: '10%'
-  }
-})
-
-export default function Scan({navigation, active}) {
+export default function Scan2({navigation, active}) {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const [text, setText] = useState('Not yet scanned')
@@ -109,16 +69,9 @@ export default function Scan({navigation, active}) {
       <View style={tailwind('flex-1 justify-center items-center')}>
           {!scanned ?
           <>
-          <View styles={styles.cont}>
-                <View style={styles.barcodebox}>
-                  <BarCodeScanner onBarCodeScanned={scanned ? undefined : handleBarCodeScanned} style={{ width: 600, height: 600 }} />
-                </View>
-                <View style={tailwind('h-52 bg-white absolute w-1 left-0 top-11')}></View>
-                <View style={tailwind('h-52 bg-white absolute w-1 right-0 top-11')}></View>
-                <View style={tailwind('h-1 bg-white absolute left-11 w-52 top-0')}></View>
-                <View style={tailwind('h-1 bg-white absolute left-11 w-52 bottom-0')}></View>
+          <View style={styles.barcodebox}>
+            <BarCodeScanner onBarCodeScanned={scanned ? undefined : handleBarCodeScanned} width={600} height={600} />
           </View>
-          
 
           <Text style={tailwind('font-bold text-3xl mt-5 text-secondary')}>Scan Container</Text>
           <Text style={tailwind('text-gray-500 text-lg mx-20 text-center')}>Position your smartphone camera close to the QR Code</Text>
@@ -126,7 +79,7 @@ export default function Scan({navigation, active}) {
         :
         <>
           <View style={tailwind('h-40 w-full p-5 justify-center items-center mb-10')}>
-            <Image resizeMode="contain" style={tailwind('w-60')} source={require('../assets/well-done.png')} />
+            <Image resizeMode="contain" style={tailwind('w-full')} source={require('../assets/well-done.png')} />
           </View>
           <Text style={tailwind('font-bold text-3xl mt-5 text-primary')}>Congratulations!</Text>
           <Text style={tailwind('text-gray-500 text-lg mx-20 text-center')}>Thank you for claiming your deposit and saving the environment</Text>
@@ -169,7 +122,7 @@ const styles = StyleSheet.create({
     width: 300,
     overflow: 'hidden',
     borderRadius: 30,
-    // backgroundColor: 'tomato',
+    backgroundColor: 'tomato',
 
     borderWidth: 4,
     borderColor: getColor('primary'),

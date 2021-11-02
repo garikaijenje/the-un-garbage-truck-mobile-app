@@ -17,6 +17,8 @@ import Content from '../components/Content';
 
 import { Ionicons, Entypo, MaterialCommunityIcons } from '@expo/vector-icons';
 
+import { responsiveSize, percentageSize, styles } from '../utilities';
+
 export default function Login({navigation}) {
 
   const [showPassword, setShowPassword] = useState(false);
@@ -24,15 +26,15 @@ export default function Login({navigation}) {
   return (
     <>
       <StatusBar barStyle='dark' style='dark' />
-    <View style={[tailwind('flex-1 bg-white'), styles.header]}>
+      <View style={[tailwind('flex-1 bg-white'), styles.header]}>
 
-      <View style={tailwind('h-80 p-5 justify-center items-center')}>
-          <Image resizeMode="contain" style={tailwind('w-full')} source={require('../assets/login.png')} />
-      </View>
-      <View style={tailwind('justify-center items-center p-5')}>
-          <Text style={tailwind('text-4xl font-bold text-primary')}>Sign In</Text>
-          <Text style={tailwind('text-xl text-gray-400')}>Please enter your email and password to login</Text>
-      </View>
+        <View style={[tailwind('justify-center items-center'), { height: percentageSize(30), padding: percentageSize(2), marginBottom: percentageSize(2)}]}>
+          <Image resizeMode="contain" style={tailwind('w-full')} source={require('../assets/logo.png')} />
+        </View>
+        <View style={[tailwind('justify-center items-center'), { padding: percentageSize(1)}]}>
+          <Text style={[tailwind('text-4xl font-bold text-primary'), { fontSize: percentageSize(5)}]}>Sign In</Text>
+          <Text style={[tailwind('text-xl text-gray-400'), { fontSize: percentageSize(2)}]}>Please enter your email and password to login</Text>
+        </View>
       <View style={tailwind('mx-5')}>
 
           <View style={tailwind('justify-center items-center mt-2')}>
@@ -63,9 +65,3 @@ export default function Login({navigation}) {
     </>
   )
 }
-
-const styles = StyleSheet.create({
-  header: {
-    paddingTop: (Platform.OS === 'ios' ? Constants.statusBarHeight : Constants.statusBarHeight) + 20,
-  },
-})
