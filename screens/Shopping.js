@@ -28,7 +28,7 @@ export default function Shopping({navigation}) {
             <ScrollView scrollEventThrottle={16} >
 
             <View style={tailwind('flex-1 pt-5 mt-10')}>
-              <Text style={[tailwind('text-2xl font-bold px-5'), { fontSize: responsiveSize(25)}]}>What can we help you find, Garikai?</Text>
+              <Text style={[tailwind('text-2xl font-bold px-5'), { fontSize: responsiveSize(25)}]}>What can we help you find, Daniel?</Text>
             </View>
 
             <View style={tailwind('h-44 mt-5 px-2')}>
@@ -62,9 +62,6 @@ export default function Shopping({navigation}) {
             </View>
 
             </ScrollView>
-
-        
-
       
       </Content>
       <Footer navigation={navigation} active="Shopping"/>

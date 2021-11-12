@@ -32,13 +32,13 @@ export default function Home({navigation}) {
           <ScrollView showsVerticalScrollIndicator={false} >
           
             <View style={[tailwind('flex-row justify-center items-center'), shona('%:margin-top-10')]}>
-            <View style={tailwind('w-20 justify-center items-start pl-2 pt-2')}>
+            <View style={tailwind('w-24 justify-center items-start pl-2 pt-2')}>
             <View style={[tailwind('bg-white p-5 rounded-full text-black'),styles.shadow]}>
               <FontAwesome5 name="user-alt" size={24} style={tailwind('text-primary')} />
             </View>
             </View>
             <View style={tailwind('flex-1 justify-center items-start')}>
-              <View><Text style={tailwind('text-3xl font-bold')}>Hi, Garikai</Text></View>
+              <View><Text style={tailwind('text-3xl font-bold')}>Hi, Daniel</Text></View>
               <View><Text style={tailwind('text-gray-500')}>Welcome back</Text></View>
             </View>
           </View>
@@ -48,7 +48,7 @@ export default function Home({navigation}) {
             <View style={tailwind('h-20 bg-secondary m-2 -mt-20 rounded-xl')}></View>
             <View style={tailwind('flex-row p-5 h-20 bg-primary rounded-xl -mt-20 justify-between items-center')}>
               <View style={tailwind('justify-center items-center')}>
-                  <Text style={[tailwind('text-white font-bold text-3xl'), shona('%:text-size-5')]}>$16.00</Text>
+                  <Text style={[tailwind('text-white font-bold text-3xl'), shona('%:text-size-3')]}>$16.00</Text>
                 <Text style={tailwind('text-white')}>Balance</Text>
               </View>
               <View style={tailwind('justify-center items-center')}>
@@ -70,7 +70,7 @@ export default function Home({navigation}) {
           </View> */}
 
           <View>
-            <Text style={[tailwind('text-3xl text-gray-400 font-bold my-5'),shona('%:text-size-4')]}>Past Claims (Deposits)</Text>
+            <Text style={[tailwind('text-3xl text-gray-400 font-bold my-5 text-center'),shona('%:text-size-3')]}>Past Claims (Deposits)</Text>
           </View>
 
             <View style={[tailwind('flex-row h-20 bg-gray-200 rounded-2xl my-2 justify-around items-center p-5')]}>
@@ -82,7 +82,7 @@ export default function Home({navigation}) {
               <View  style={tailwind('flex-1')}>
                 <Text style={[tailwind('text-black font-bold text-2xl'),shona('%:text-size-2.5')]}>Milk Container</Text>
               </View>
-              <View style={tailwind('w-20')}>
+              <View style={tailwind('w-28')}>
                 <Text style={[tailwind('text-primary font-bold text-right text-2xl'),shona('%:text-size-2.5')]}>+ $2.50</Text>
                 <Text style={[tailwind('text-gray-500 text-right text-lg'), shona('%:text-size-2')]}>25 Aug</Text>
               </View>
@@ -96,7 +96,7 @@ export default function Home({navigation}) {
               <View  style={tailwind('flex-1')}>
                 <Text style={[tailwind('text-black font-bold text-2xl'),shona('%:text-size-2.5')]}>Milk Container</Text>
               </View>
-              <View style={tailwind('w-20')}>
+              <View style={tailwind('w-28')}>
                 <Text style={[tailwind('text-primary font-bold text-right text-2xl'),shona('%:text-size-2.5')]}>+ $2.50</Text>
                 <Text style={[tailwind('text-gray-500 text-right text-lg'), shona('%:text-size-2')]}>25 Aug</Text>
               </View>
@@ -110,7 +110,7 @@ export default function Home({navigation}) {
               <View  style={tailwind('flex-1')}>
                 <Text style={[tailwind('text-black font-bold text-2xl'),shona('%:text-size-2.5')]}>Milk Container</Text>
               </View>
-              <View style={tailwind('w-20')}>
+              <View style={tailwind('w-28')}>
                 <Text style={[tailwind('text-primary font-bold text-right text-2xl'),shona('%:text-size-2.5')]}>+ $2.50</Text>
                 <Text style={[tailwind('text-gray-500 text-right text-lg'), shona('%:text-size-2')]}>25 Aug</Text>
               </View>
@@ -124,7 +124,7 @@ export default function Home({navigation}) {
               <View  style={tailwind('flex-1')}>
                 <Text style={[tailwind('text-black font-bold text-2xl'),shona('%:text-size-2.5')]}>Milk Container</Text>
               </View>
-              <View style={tailwind('w-20')}>
+              <View style={tailwind('w-28')}>
                 <Text style={[tailwind('text-primary font-bold text-right text-2xl'),shona('%:text-size-2.5')]}>+ $2.50</Text>
                 <Text style={[tailwind('text-gray-500 text-right text-lg'), shona('%:text-size-2')]}>25 Aug</Text>
               </View>
